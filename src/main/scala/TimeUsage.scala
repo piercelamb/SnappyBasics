@@ -1,5 +1,6 @@
 import java.nio.file.Paths
 
+import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.sql._
 
 /**
@@ -8,18 +9,17 @@ import org.apache.spark.sql._
 object TimeUsage {
 
 
-  val spark: SparkSession = SparkSession
-    .builder
-    .appName("SparkApp")
-    .master("local[*]")
-    .getOrCreate
+  val context = new SparkContext(
+    new SparkConf()
+      .setAppName("Time Usage")
+      .setMaster("local[*]")
+  )
 
-  val snappy = new SnappySession(spark.sparkContext)
+  val snappy = new SnappySession(context)
 
   def main(args: Array[String]): Unit = {
     val (columns, initDf) = read("/timeusage/atussum.csv")
     println(columns)
-    spark.stop()
   }
 
   /** @return The read DataFrame along with its column names. */

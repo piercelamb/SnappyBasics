@@ -1,4 +1,4 @@
-17/05/11 11:01:18.435 PDT run-main-0<tid=0x2d> INFO snappystore: 
+17/05/11 12:43:50.357 PDT run-main-0<tid=0x2b> INFO snappystore: 
 ---------------------------------------------------------------------------
 
   Copyright (c) 2016 SnappyData, Inc. All rights reserved.
@@ -22,7 +22,7 @@ Native version: gemfirexd native code unavailable
 Source revision: 392bbf24c28530a624b81e1f95232b6da6688e53
 Source repository: branch-1.5.4
 Running on: Pierces-MacBook-Pro.local/10.1.10.186, 8 cpu(s), x86_64 Mac OS X 10.11.2
-Process ID: 42348
+Process ID: 43011
 User: plamb
 Current dir: /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics
 Home dir: /Users/plamb
@@ -77,7 +77,7 @@ System Properties:
     jline.shutdownhook = false
     jna.loaded = true
     jna.platform.library.path = /usr/lib:/usr/lib
-    jnidispatch.path = /var/folders/w1/v_m_9hp567qdv77k1rrglw_c0000gn/T/jna-106748474/jna6022618122794092771.tmp
+    jnidispatch.path = /var/folders/w1/v_m_9hp567qdv77k1rrglw_c0000gn/T/jna-106748474/jna2177863878725673851.tmp
     line.separator = 
 
     os.version = 10.11.2
@@ -102,7 +102,8 @@ System Properties:
     user.timezone = America/Los_Angeles
 ---------------------------------------------------------------------------
 
-17/05/11 11:01:18.438 PDT run-main-0<tid=0x2d> INFO snappystore: Startup Configuration:
+17/05/11 12:43:50.357 PDT run-main-0<tid=0x2b> INFO snappystore: Renamed old log file to "gemfirexd-interface-02-01.log".
+17/05/11 12:43:50.359 PDT run-main-0<tid=0x2b> INFO snappystore: Startup Configuration:
  ### GemFire Properties defined with system property ###
 log-file=gemfirexd-interface.log
 ### GemFire Properties defined with api ###
@@ -193,18 +194,18 @@ udp-recv-buffer-size=1048576
 udp-send-buffer-size=65535
 user-command-packages=
 
-17/05/11 11:01:18.438 PDT run-main-0<tid=0x2d> INFO snappystore: Running in local mode since mcast-port was 0 and locators was empty.
-17/05/11 11:01:18.526 PDT Thread-15 StatSampler<tid=0x79> INFO snappystore: Disabling statistic archival.
-17/05/11 11:01:18.723 PDT run-main-0<tid=0x2d> INFO snappystore: Initializing region _monitoringRegion_10.1.10.186<v-1>0
-17/05/11 11:01:18.789 PDT run-main-0<tid=0x2d> INFO snappystore: GemFire Cache successfully created.
-17/05/11 11:01:18.797 PDT run-main-0<tid=0x2d> INFO snappystore: GfxdHeapThreshold: Query Cancellation Thread Started with query cancellation interval 100ms
-17/05/11 11:01:18.815 PDT run-main-0<tid=0x2d> INFO snappystore: GemFire Cache successfully booted with 
+17/05/11 12:43:50.360 PDT run-main-0<tid=0x2b> INFO snappystore: Running in local mode since mcast-port was 0 and locators was empty.
+17/05/11 12:43:50.440 PDT Thread-15 StatSampler<tid=0x77> INFO snappystore: Disabling statistic archival.
+17/05/11 12:43:50.627 PDT run-main-0<tid=0x2b> INFO snappystore: Initializing region _monitoringRegion_10.1.10.186<v-1>0
+17/05/11 12:43:50.696 PDT run-main-0<tid=0x2b> INFO snappystore: GemFire Cache successfully created.
+17/05/11 12:43:50.703 PDT run-main-0<tid=0x2b> INFO snappystore: GfxdHeapThreshold: Query Cancellation Thread Started with query cancellation interval 100ms
+17/05/11 12:43:50.722 PDT run-main-0<tid=0x2b> INFO snappystore: GemFire Cache successfully booted with 
 --- file properties ---
 --- EMPTY ---
 --- boot connection properties ---
  gemfirexd.access="memstore"
  gemfirexd.authentication.required="false"
- gemfirexd.database-object="com.pivotal.gemfirexd.internal.engine.db.FabricDatabase@7060c248"
+ gemfirexd.database-object="com.pivotal.gemfirexd.internal.engine.db.FabricDatabase@4a019817"
  gemfirexd.engineType="2"
  gemfirexd.serviceLocale="en_US"
  gemfirexd.serviceProtocol="com.pivotal.gemfirexd.internal.database.Database"
@@ -212,31 +213,48 @@ user-command-packages=
  route-query="false"
 --- end --
 
-17/05/11 11:01:18.815 PDT run-main-0<tid=0x2d> INFO snappystore: TraceFabricServiceBoot: GemFireStore: booted with persist-indexes=true
-17/05/11 11:01:18.819 PDT run-main-0<tid=0x2d> INFO snappystore: This JVM is setup with SnappyData datastore role.
-17/05/11 11:01:18.860 PDT run-main-0<tid=0x2d> INFO snappystore: Locked disk store GFXD-DEFAULT-DISKSTORE for exclusive access in directory: /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/.
-17/05/11 11:01:18.876 PDT run-main-0<tid=0x2d> INFO snappystore: Created disk store GFXD-DEFAULT-DISKSTORE with unique id 9563dc3b-a6ae-4b2a-977d-5e6abb70f5e5
-17/05/11 11:01:18.889 PDT run-main-0<tid=0x2d> INFO snappystore: recovery region initialization took 3 ms
-17/05/11 11:01:18.895 PDT run-main-0<tid=0x2d> INFO snappystore: Locked disk store GFXD-DD-DISKSTORE for exclusive access in directory: ./datadictionary
-17/05/11 11:01:18.898 PDT run-main-0<tid=0x2d> INFO snappystore: Created disk store GFXD-DD-DISKSTORE with unique id d3cdc1da-d856-4b7a-8372-42c5938100ca
-17/05/11 11:01:18.899 PDT run-main-0<tid=0x2d> INFO snappystore: recovery region initialization took 0 ms
-17/05/11 11:01:18.910 PDT run-main-0<tid=0x2d> INFO snappystore: Created oplog#1 drf for disk store GFXD-DD-DISKSTORE.
-17/05/11 11:01:18.928 PDT run-main-0<tid=0x2d> INFO snappystore: Created oplog#1 crf for disk store GFXD-DD-DISKSTORE.
-17/05/11 11:01:19.095 PDT run-main-0<tid=0x2d> INFO snappystore: Created oplog#1 drf for disk store GFXD-DEFAULT-DISKSTORE.
-17/05/11 11:01:20.505 PDT run-main-0<tid=0x2d> INFO snappystore: Created oplog#1 crf for disk store GFXD-DEFAULT-DISKSTORE.
-17/05/11 11:01:20.535 PDT run-main-0<tid=0x2d> WARN snappystore: Creating persistent region GFXD_PdxTypes, but enable-network-partition-detection is set to false. Running with network partition detection disabled can lead to an unrecoverable system in the event of a network split.
-17/05/11 11:01:20.535 PDT run-main-0<tid=0x2d> INFO snappystore: Initializing region GFXD_PdxTypes
-17/05/11 11:01:20.537 PDT run-main-0<tid=0x2d> INFO snappystore: Region /GFXD_PdxTypes was created on this member with the persistent id /10.1.10.186:/Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary created at timestamp 1494525680535 version 0 diskStoreId d3cdc1da-d856-4b7a-8372-42c5938100ca name .
-17/05/11 11:01:20.539 PDT run-main-0<tid=0x2d> INFO snappystore: Initializing region _DDL_STMTS_META_REGION
-17/05/11 11:01:20.540 PDT run-main-0<tid=0x2d> INFO snappystore: Region /_DDL_STMTS_META_REGION was created on this member with the persistent id /10.1.10.186:/Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary created at timestamp 1494525680539 version 0 diskStoreId d3cdc1da-d856-4b7a-8372-42c5938100ca name .
-17/05/11 11:01:20.562 PDT run-main-0<tid=0x2d> INFO snappystore: Initializing region __PR
-17/05/11 11:01:20.595 PDT run-main-0<tid=0x2d> INFO snappystore: Partitioned Region /__IDENTITYREGION2 is born with prId=1 ident:#__IDENTITYREGION2
-17/05/11 11:01:20.867 PDT run-main-0<tid=0x2d> INFO snappystore: acquired dd read lock during post create
-17/05/11 11:01:22.234 PDT run-main-0<tid=0x2d> INFO snappystore: FabricDatabase: waiting for index loading from GFXD-DEFAULT-DISKSTORE
-17/05/11 11:01:22.234 PDT run-main-0<tid=0x2d> INFO snappystore: FabricDatabase: Index loading completed for GFXD-DEFAULT-DISKSTORE in 0 ms
-17/05/11 11:01:22.316 PDT run-main-0<tid=0x2d> INFO snappystore: FabricDatabase: initial DDL replay completed.
-17/05/11 11:01:22.316 PDT run-main-0<tid=0x2d> INFO snappystore: FabricDatabase: Authentication recheck successful.
-17/05/11 11:01:22.323 PDT run-main-0<tid=0x2d> WARN snappystore: got throwable: java.lang.NoClassDefFoundError: org/apache/hadoop/hive/metastore/api/NoSuchObjectException calling shut down
+17/05/11 12:43:50.722 PDT run-main-0<tid=0x2b> INFO snappystore: TraceFabricServiceBoot: GemFireStore: booted with persist-indexes=true
+17/05/11 12:43:50.727 PDT run-main-0<tid=0x2b> INFO snappystore: This JVM is setup with SnappyData datastore role.
+17/05/11 12:43:50.774 PDT run-main-0<tid=0x2b> INFO snappystore: Locked disk store GFXD-DEFAULT-DISKSTORE for exclusive access in directory: /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/.
+17/05/11 12:43:50.805 PDT run-main-0<tid=0x2b> INFO snappystore: Recovered disk store GFXD-DEFAULT-DISKSTORE with unique id 9563dc3b-a6ae-4b2a-977d-5e6abb70f5e5
+17/05/11 12:43:50.814 PDT run-main-0<tid=0x2b> INFO snappystore: Recovering oplog#2 /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./BACKUPGFXD-DEFAULT-DISKSTORE_2.drf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:50.814 PDT run-main-0<tid=0x2b> INFO snappystore: Recovering oplog#1 /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./BACKUPGFXD-DEFAULT-DISKSTORE_1.drf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:50.816 PDT run-main-0<tid=0x2b> INFO snappystore: Recovering oplog#2 /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./BACKUPGFXD-DEFAULT-DISKSTORE_2.crf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:50.818 PDT run-main-0<tid=0x2b> INFO snappystore: Recovering oplog#1 /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./BACKUPGFXD-DEFAULT-DISKSTORE_1.krf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:50.832 PDT run-main-0<tid=0x2b> INFO snappystore: recovery oplog load took 18 ms
+17/05/11 12:43:50.833 PDT Oplog Delete Task<tid=0x82> INFO snappystore: Deleted oplog#2 crf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:50.834 PDT Oplog Delete Task<tid=0x82> INFO snappystore: Deleted oplog#2 drf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:51.051 PDT run-main-0<tid=0x2b> INFO snappystore: Created oplog#3 drf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:52.398 PDT run-main-0<tid=0x2b> INFO snappystore: Created oplog#3 crf for disk store GFXD-DEFAULT-DISKSTORE.
+17/05/11 12:43:52.410 PDT run-main-0<tid=0x2b> INFO snappystore: recoverOplogs oplog: oplog#2 parent: GFXD-DEFAULT-DISKSTORE, needskrf: true
+17/05/11 12:43:52.410 PDT run-main-0<tid=0x2b> INFO snappystore: createKrfAsync called for oplog: oplog#2, parent: GFXD-DEFAULT-DISKSTORE
+17/05/11 12:43:52.411 PDT run-main-0<tid=0x2b> INFO snappystore: recovery region initialization took 1,579 ms
+17/05/11 12:43:52.416 PDT run-main-0<tid=0x2b> INFO snappystore: Locked disk store GFXD-DD-DISKSTORE for exclusive access in directory: ./datadictionary
+17/05/11 12:43:52.427 PDT run-main-0<tid=0x2b> INFO snappystore: Recovered disk store GFXD-DD-DISKSTORE with unique id d3cdc1da-d856-4b7a-8372-42c5938100ca
+17/05/11 12:43:52.428 PDT run-main-0<tid=0x2b> INFO snappystore: Recovering oplog#2 /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary/BACKUPGFXD-DD-DISKSTORE_2.drf for disk store GFXD-DD-DISKSTORE.
+17/05/11 12:43:52.428 PDT run-main-0<tid=0x2b> INFO snappystore: Recovering oplog#2 /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary/BACKUPGFXD-DD-DISKSTORE_2.crf for disk store GFXD-DD-DISKSTORE.
+17/05/11 12:43:52.428 PDT run-main-0<tid=0x2b> INFO snappystore: recovery oplog load took 0 ms
+17/05/11 12:43:52.429 PDT Oplog Delete Task<tid=0x85> INFO snappystore: Deleted oplog#2 crf for disk store GFXD-DD-DISKSTORE.
+17/05/11 12:43:52.429 PDT Oplog Delete Task<tid=0x85> INFO snappystore: Deleted oplog#2 drf for disk store GFXD-DD-DISKSTORE.
+17/05/11 12:43:52.443 PDT run-main-0<tid=0x2b> INFO snappystore: Created oplog#3 drf for disk store GFXD-DD-DISKSTORE.
+17/05/11 12:43:52.461 PDT run-main-0<tid=0x2b> INFO snappystore: Created oplog#3 crf for disk store GFXD-DD-DISKSTORE.
+17/05/11 12:43:52.465 PDT run-main-0<tid=0x2b> INFO snappystore: recoverOplogs oplog: oplog#2 parent: GFXD-DD-DISKSTORE, needskrf: true
+17/05/11 12:43:52.465 PDT run-main-0<tid=0x2b> INFO snappystore: createKrfAsync called for oplog: oplog#2, parent: GFXD-DD-DISKSTORE
+17/05/11 12:43:52.465 PDT run-main-0<tid=0x2b> INFO snappystore: recovery region initialization took 36 ms
+17/05/11 12:43:52.479 PDT run-main-0<tid=0x2b> WARN snappystore: Creating persistent region GFXD_PdxTypes, but enable-network-partition-detection is set to false. Running with network partition detection disabled can lead to an unrecoverable system in the event of a network split.
+17/05/11 12:43:52.479 PDT run-main-0<tid=0x2b> INFO snappystore: Initializing region GFXD_PdxTypes
+17/05/11 12:43:52.480 PDT run-main-0<tid=0x2b> INFO snappystore: Region /GFXD_PdxTypes recovered from the local disk. Old persistent ID: /10.1.10.186:/Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary created at timestamp 1494531610800 version 0 diskStoreId d3cdc1da-d856-4b7a-8372-42c5938100ca name , new persistent ID /10.1.10.186:/Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary created at timestamp 1494531832479 version 0 diskStoreId d3cdc1da-d856-4b7a-8372-42c5938100ca name 
+17/05/11 12:43:52.483 PDT run-main-0<tid=0x2b> INFO snappystore: Initializing region _DDL_STMTS_META_REGION
+17/05/11 12:43:52.484 PDT run-main-0<tid=0x2b> INFO snappystore: Region /_DDL_STMTS_META_REGION recovered from the local disk. Old persistent ID: /10.1.10.186:/Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary created at timestamp 1494531610804 version 0 diskStoreId d3cdc1da-d856-4b7a-8372-42c5938100ca name , new persistent ID /10.1.10.186:/Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./datadictionary created at timestamp 1494531832483 version 0 diskStoreId d3cdc1da-d856-4b7a-8372-42c5938100ca name 
+17/05/11 12:43:52.510 PDT run-main-0<tid=0x2b> INFO snappystore: Initializing region __PR
+17/05/11 12:43:52.542 PDT run-main-0<tid=0x2b> INFO snappystore: Partitioned Region /__IDENTITYREGION2 is born with prId=1 ident:#__IDENTITYREGION2
+17/05/11 12:43:52.831 PDT run-main-0<tid=0x2b> INFO snappystore: acquired dd read lock during post create
+17/05/11 12:43:54.205 PDT run-main-0<tid=0x2b> INFO snappystore: FabricDatabase: waiting for index loading from GFXD-DEFAULT-DISKSTORE
+17/05/11 12:43:54.205 PDT run-main-0<tid=0x2b> INFO snappystore: FabricDatabase: Index loading completed for GFXD-DEFAULT-DISKSTORE in 0 ms
+17/05/11 12:43:54.208 PDT Idle OplogCompactor<tid=0x83> INFO snappystore: Oplog::recoverValuesIfNeeded: recovering values from oplog#1
+17/05/11 12:43:54.280 PDT run-main-0<tid=0x2b> INFO snappystore: FabricDatabase: initial DDL replay completed.
+17/05/11 12:43:54.280 PDT run-main-0<tid=0x2b> INFO snappystore: FabricDatabase: Authentication recheck successful.
+17/05/11 12:43:54.287 PDT run-main-0<tid=0x2b> WARN snappystore: got throwable: java.lang.NoClassDefFoundError: org/apache/hadoop/hive/metastore/api/NoSuchObjectException calling shut down
 java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/hadoop/hive/metastore/api/NoSuchObjectException
 	at com.pivotal.gemfirexd.internal.engine.store.GemFireStore.initExternalCatalog(GemFireStore.java:2352)
 	at com.pivotal.gemfirexd.internal.engine.db.FabricDatabase.postCreate(FabricDatabase.java:537)
@@ -256,7 +274,7 @@ java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/hadoop/hi
 	at org.apache.spark.sql.SnappyContext$.initGlobalSnappyContext(SnappyContext.scala:1031)
 	at org.apache.spark.sql.SnappySession.<init>(SnappySession.scala:124)
 	at org.apache.spark.sql.SnappySession.<init>(SnappySession.scala:74)
-	at TimeUsage$.<init>(TimeUsage.scala:17)
+	at TimeUsage$.<init>(TimeUsage.scala:18)
 	at TimeUsage$.<clinit>(TimeUsage.scala)
 	at TimeUsage.main(TimeUsage.scala)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -287,25 +305,22 @@ Caused by: java.lang.ClassNotFoundException: org.apache.hadoop.hive.metastore.ap
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 41 more
-17/05/11 11:01:22.326 PDT run-main-0<tid=0x2d> INFO snappystore: Stopping GemFireXD Management/Monitoring ... 
-17/05/11 11:01:22.327 PDT run-main-0<tid=0x2d> INFO snappystore: Unregistered GemFireXD MBeans: []
-17/05/11 11:01:22.327 PDT run-main-0<tid=0x2d> INFO snappystore: GfxdHeapThreshold: Stopping Query Cancellation Thread
-17/05/11 11:01:22.327 PDT gemfirexd.QueryCanceller<tid=0x81> INFO snappystore: GfxdHeapThreshold: Processing CRITICAL_UP event
-17/05/11 11:01:22.328 PDT gemfirexd.QueryCanceller<tid=0x81> INFO snappystore: GfxdHeapThreshold: Query Cancellation Thread Stopped 
-17/05/11 11:01:22.328 PDT run-main-0<tid=0x2d> INFO snappystore: Disconnecting GemFire distributed system and stopping GemFireStore
-17/05/11 11:01:22.334 PDT run-main-0<tid=0x2d> INFO snappystore: GemFireCache[id = 1594998429; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Thu May 11 11:01:18 PDT 2017; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
-17/05/11 11:01:22.338 PDT run-main-0<tid=0x2d> INFO snappystore: Created oplog#1 krf for disk store GFXD-DEFAULT-DISKSTORE.
-17/05/11 11:01:22.346 PDT run-main-0<tid=0x2d> INFO snappystore: Created oplog#1 idxkrf for disk store GFXD-DEFAULT-DISKSTORE.
-17/05/11 11:01:22.347 PDT run-main-0<tid=0x2d> INFO snappystore: Created oplog#1 /Users/plamb/Documents/SnappyData/Coding/My_Projects/SnappyBasics/./BACKUPGFXD-DEFAULT-DISKSTORE_1.1.idxkrf for disk store GFXD-DEFAULT-DISKSTORE.
-17/05/11 11:01:22.363 PDT run-main-0<tid=0x2d> INFO snappystore: closing DiskStore[GFXD-DEFAULT-DISKSTORE]
-17/05/11 11:01:22.368 PDT run-main-0<tid=0x2d> INFO snappystore: Unlocked disk store GFXD-DEFAULT-DISKSTORE
-17/05/11 11:01:22.368 PDT run-main-0<tid=0x2d> INFO snappystore: Stopping DiskStoreTaskPool
-17/05/11 11:01:22.368 PDT run-main-0<tid=0x2d> INFO snappystore: closing DiskStore[GFXD-DD-DISKSTORE]
-17/05/11 11:01:22.369 PDT run-main-0<tid=0x2d> INFO snappystore: Unlocked disk store GFXD-DD-DISKSTORE
-17/05/11 11:01:22.369 PDT run-main-0<tid=0x2d> INFO snappystore: Stopping DiskStoreTaskPool
-17/05/11 11:01:23.479 PDT run-main-0<tid=0x2d> INFO snappystore: TraceFabricServiceBoot: GemFireStore service stopped successfully, notifying status ... 
-17/05/11 11:01:23.485 PDT run-main-0<tid=0x2d> INFO snappystore: 
-[TRACE 2017/05/11 11:01:23.482 PDT GFXD:TRACE <run-main-0> tid=0x2d] (XID = 2(UserTransaction)@717d8743;txState=null;supportsTX=true), (SESSIONID = 1), (DATABASE = snappydata), (DRDAID = null), Failed Statement is: null
+17/05/11 12:43:54.290 PDT run-main-0<tid=0x2b> INFO snappystore: Stopping GemFireXD Management/Monitoring ... 
+17/05/11 12:43:54.290 PDT run-main-0<tid=0x2b> INFO snappystore: Unregistered GemFireXD MBeans: []
+17/05/11 12:43:54.291 PDT run-main-0<tid=0x2b> INFO snappystore: GfxdHeapThreshold: Stopping Query Cancellation Thread
+17/05/11 12:43:54.291 PDT gemfirexd.QueryCanceller<tid=0x7f> INFO snappystore: GfxdHeapThreshold: Processing CRITICAL_UP event
+17/05/11 12:43:54.291 PDT gemfirexd.QueryCanceller<tid=0x7f> INFO snappystore: GfxdHeapThreshold: Query Cancellation Thread Stopped 
+17/05/11 12:43:54.292 PDT run-main-0<tid=0x2b> INFO snappystore: Disconnecting GemFire distributed system and stopping GemFireStore
+17/05/11 12:43:54.301 PDT run-main-0<tid=0x2b> INFO snappystore: GemFireCache[id = 1926926596; isClosing = true; isShutDownAll = false; closingGatewayHubsByShutdownAll = false; created = Thu May 11 12:43:50 PDT 2017; server = false; copyOnRead = false; lockLease = 120; lockTimeout = 60]: Now closing.
+17/05/11 12:43:54.318 PDT run-main-0<tid=0x2b> INFO snappystore: closing DiskStore[GFXD-DEFAULT-DISKSTORE]
+17/05/11 12:43:54.320 PDT run-main-0<tid=0x2b> INFO snappystore: Unlocked disk store GFXD-DEFAULT-DISKSTORE
+17/05/11 12:43:54.320 PDT run-main-0<tid=0x2b> INFO snappystore: Stopping DiskStoreTaskPool
+17/05/11 12:43:54.320 PDT run-main-0<tid=0x2b> INFO snappystore: closing DiskStore[GFXD-DD-DISKSTORE]
+17/05/11 12:43:54.320 PDT run-main-0<tid=0x2b> INFO snappystore: Unlocked disk store GFXD-DD-DISKSTORE
+17/05/11 12:43:54.321 PDT run-main-0<tid=0x2b> INFO snappystore: Stopping DiskStoreTaskPool
+17/05/11 12:43:55.435 PDT run-main-0<tid=0x2b> INFO snappystore: TraceFabricServiceBoot: GemFireStore service stopped successfully, notifying status ... 
+17/05/11 12:43:55.442 PDT run-main-0<tid=0x2b> INFO snappystore: 
+[TRACE 2017/05/11 12:43:55.438 PDT GFXD:TRACE <run-main-0> tid=0x2b] (XID = 2(UserTransaction)@18bb6ff2;txState=null;supportsTX=true), (SESSIONID = 1), (DATABASE = snappydata), (DRDAID = null), Failed Statement is: null
 ERROR XJ040: Failed to start database 'gemfirexd', see the cause for details.
 	at com.pivotal.gemfirexd.internal.iapi.error.StandardException.newException(StandardException.java:473)
 	at com.pivotal.gemfirexd.internal.engine.db.FabricDatabase.postCreate(FabricDatabase.java:585)
@@ -325,7 +340,7 @@ ERROR XJ040: Failed to start database 'gemfirexd', see the cause for details.
 	at org.apache.spark.sql.SnappyContext$.initGlobalSnappyContext(SnappyContext.scala:1031)
 	at org.apache.spark.sql.SnappySession.<init>(SnappySession.scala:124)
 	at org.apache.spark.sql.SnappySession.<init>(SnappySession.scala:74)
-	at TimeUsage$.<init>(TimeUsage.scala:17)
+	at TimeUsage$.<init>(TimeUsage.scala:18)
 	at TimeUsage$.<clinit>(TimeUsage.scala)
 	at TimeUsage.main(TimeUsage.scala)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -367,7 +382,7 @@ java.lang.ClassNotFoundException: org.apache.hadoop.hive.metastore.api.NoSuchObj
 	... 41 more
 ============= end nested exception, level (3) ===========
 
-17/05/11 11:01:23.486 PDT run-main-0<tid=0x2d> INFO snappystore: ERROR XJ040: Failed to start database 'gemfirexd', see the cause for details.
+17/05/11 12:43:55.443 PDT run-main-0<tid=0x2b> INFO snappystore: ERROR XJ040: Failed to start database 'gemfirexd', see the cause for details.
 	at com.pivotal.gemfirexd.internal.iapi.error.StandardException.newException(StandardException.java:473)
 	at com.pivotal.gemfirexd.internal.engine.db.FabricDatabase.postCreate(FabricDatabase.java:585)
 	at com.pivotal.gemfirexd.internal.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:658)
@@ -386,7 +401,7 @@ java.lang.ClassNotFoundException: org.apache.hadoop.hive.metastore.api.NoSuchObj
 	at org.apache.spark.sql.SnappyContext$.initGlobalSnappyContext(SnappyContext.scala:1031)
 	at org.apache.spark.sql.SnappySession.<init>(SnappySession.scala:124)
 	at org.apache.spark.sql.SnappySession.<init>(SnappySession.scala:74)
-	at TimeUsage$.<init>(TimeUsage.scala:17)
+	at TimeUsage$.<init>(TimeUsage.scala:18)
 	at TimeUsage$.<clinit>(TimeUsage.scala)
 	at TimeUsage.main(TimeUsage.scala)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -428,7 +443,7 @@ java.lang.ClassNotFoundException: org.apache.hadoop.hive.metastore.api.NoSuchObj
 	... 41 more
 ============= end nested exception, level (3) ===========
 
-17/05/11 11:01:23.502 PDT Spark Context Cleaner<tid=0x> ERROR ContextCleaner: Error in cleaning thread
+17/05/11 12:43:55.455 PDT Spark Context Cleaner<tid=0x> ERROR ContextCleaner: Error in cleaning thread
 java.lang.InterruptedException
 	at java.lang.Object.wait(Native Method)
 	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
@@ -436,7 +451,7 @@ java.lang.InterruptedException
 	at org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1305)
 	at org.apache.spark.ContextCleaner.org$apache$spark$ContextCleaner$$keepCleaning(ContextCleaner.scala:174)
 	at org.apache.spark.ContextCleaner$$anon$1.run(ContextCleaner.scala:68)
-17/05/11 11:01:23.503 PDT SparkListenerBus<tid=0x> ERROR Utils: uncaught error in thread SparkListenerBus, stopping SparkContext
+17/05/11 12:43:55.460 PDT SparkListenerBus<tid=0x> ERROR Utils: uncaught error in thread SparkListenerBus, stopping SparkContext
 java.lang.InterruptedException
 	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:998)
 	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1304)
@@ -448,32 +463,32 @@ java.lang.InterruptedException
 	at org.apache.spark.scheduler.LiveListenerBus$$anon$1$$anonfun$run$1.apply$mcV$sp(LiveListenerBus.scala:78)
 	at org.apache.spark.util.Utils$.tryOrStopSparkContext(Utils.scala:1305)
 	at org.apache.spark.scheduler.LiveListenerBus$$anon$1.run(LiveListenerBus.scala:77)
-17/05/11 11:01:23.510 PDT SparkListenerBus<tid=0x> INFO ServerConnector: Stopped ServerConnector@5becd2cc{HTTP/1.1}{0.0.0.0:4040}
-17/05/11 11:01:23.512 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@50488e2f{/stages/stage/kill,null,UNAVAILABLE}
-17/05/11 11:01:23.513 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@886709a{/api,null,UNAVAILABLE}
-17/05/11 11:01:23.513 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@26f3bdc4{/static,null,UNAVAILABLE}
-17/05/11 11:01:23.513 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@6715782b{/executors/threadDump/json,null,UNAVAILABLE}
-17/05/11 11:01:23.514 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@1c5899dc{/executors/threadDump,null,UNAVAILABLE}
-17/05/11 11:01:23.514 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@72cb9202{/executors/json,null,UNAVAILABLE}
-17/05/11 11:01:23.514 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@6694e673{/executors,null,UNAVAILABLE}
-17/05/11 11:01:23.514 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@631304b8{/environment/json,null,UNAVAILABLE}
-17/05/11 11:01:23.515 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@3a7a80ff{/environment,null,UNAVAILABLE}
-17/05/11 11:01:23.515 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@9d3a300{/Spark Cache/rdd/json,null,UNAVAILABLE}
-17/05/11 11:01:23.515 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@2324d4d5{/Spark Cache/rdd,null,UNAVAILABLE}
-17/05/11 11:01:23.515 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@16e9eb3b{/Spark Cache/json,null,UNAVAILABLE}
-17/05/11 11:01:23.515 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@7919507d{/Spark Cache,null,UNAVAILABLE}
-17/05/11 11:01:23.516 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@406d561f{/stages/pool/json,null,UNAVAILABLE}
-17/05/11 11:01:23.516 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@2e536566{/stages/pool,null,UNAVAILABLE}
-17/05/11 11:01:23.516 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@41c5cb5e{/stages/stage/json,null,UNAVAILABLE}
-17/05/11 11:01:23.516 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@3cd0a3ac{/stages/stage,null,UNAVAILABLE}
-17/05/11 11:01:23.516 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@5826ced5{/stages/json,null,UNAVAILABLE}
-17/05/11 11:01:23.517 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@72c3a75f{/stages,null,UNAVAILABLE}
-17/05/11 11:01:23.517 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@66937f6f{/jobs/job/json,null,UNAVAILABLE}
-17/05/11 11:01:23.517 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@5176bc89{/jobs/job,null,UNAVAILABLE}
-17/05/11 11:01:23.517 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@490c787a{/jobs/json,null,UNAVAILABLE}
-17/05/11 11:01:23.517 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@c4310e2{/jobs,null,UNAVAILABLE}
-17/05/11 11:01:23.519 PDT SparkListenerBus<tid=0x> INFO SparkUI: Stopped Spark web UI at http://10.1.10.186:4040
-17/05/11 11:01:23.534 PDT Thread-2<tid=0x> INFO DiskBlockManager: Shutdown hook called
-17/05/11 11:01:23.537 PDT Thread-2<tid=0x> INFO ShutdownHookManager: Shutdown hook called
-17/05/11 11:01:23.538 PDT Thread-2<tid=0x> INFO ShutdownHookManager: Deleting directory /private/var/folders/w1/v_m_9hp567qdv77k1rrglw_c0000gn/T/spark-3d39e2cf-d9a6-47a5-8308-d07f1513e9ed/userFiles-33edce2a-90d7-46a3-9748-721ce13fde1d
-17/05/11 11:01:23.538 PDT Thread-2<tid=0x> INFO ShutdownHookManager: Deleting directory /private/var/folders/w1/v_m_9hp567qdv77k1rrglw_c0000gn/T/spark-3d39e2cf-d9a6-47a5-8308-d07f1513e9ed
+17/05/11 12:43:55.469 PDT SparkListenerBus<tid=0x> INFO ServerConnector: Stopped ServerConnector@104bb17{HTTP/1.1}{0.0.0.0:4040}
+17/05/11 12:43:55.472 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@5365b571{/stages/stage/kill,null,UNAVAILABLE}
+17/05/11 12:43:55.472 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@64586c91{/api,null,UNAVAILABLE}
+17/05/11 12:43:55.472 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@6e5ddcd7{/static,null,UNAVAILABLE}
+17/05/11 12:43:55.473 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@575bfcfd{/executors/threadDump/json,null,UNAVAILABLE}
+17/05/11 12:43:55.473 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@877efa4{/executors/threadDump,null,UNAVAILABLE}
+17/05/11 12:43:55.473 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@7cdeda2f{/executors/json,null,UNAVAILABLE}
+17/05/11 12:43:55.473 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@301125c4{/executors,null,UNAVAILABLE}
+17/05/11 12:43:55.474 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@d7a4126{/environment/json,null,UNAVAILABLE}
+17/05/11 12:43:55.474 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@62a2cfe7{/environment,null,UNAVAILABLE}
+17/05/11 12:43:55.474 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@77177283{/Spark Cache/rdd/json,null,UNAVAILABLE}
+17/05/11 12:43:55.475 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@57cd536e{/Spark Cache/rdd,null,UNAVAILABLE}
+17/05/11 12:43:55.475 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@1a9eb520{/Spark Cache/json,null,UNAVAILABLE}
+17/05/11 12:43:55.475 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@5078ab05{/Spark Cache,null,UNAVAILABLE}
+17/05/11 12:43:55.475 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@23b07945{/stages/pool/json,null,UNAVAILABLE}
+17/05/11 12:43:55.475 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@4341cbe6{/stages/pool,null,UNAVAILABLE}
+17/05/11 12:43:55.476 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@be82892{/stages/stage/json,null,UNAVAILABLE}
+17/05/11 12:43:55.476 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@7e11b55b{/stages/stage,null,UNAVAILABLE}
+17/05/11 12:43:55.476 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@11ce2be0{/stages/json,null,UNAVAILABLE}
+17/05/11 12:43:55.476 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@279530a{/stages,null,UNAVAILABLE}
+17/05/11 12:43:55.477 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@3038a685{/jobs/job/json,null,UNAVAILABLE}
+17/05/11 12:43:55.477 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@61d1dc2e{/jobs/job,null,UNAVAILABLE}
+17/05/11 12:43:55.477 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@b0304e9{/jobs/json,null,UNAVAILABLE}
+17/05/11 12:43:55.477 PDT SparkListenerBus<tid=0x> INFO ContextHandler: Stopped o.e.j.s.ServletContextHandler@8f74088{/jobs,null,UNAVAILABLE}
+17/05/11 12:43:55.479 PDT SparkListenerBus<tid=0x> INFO SparkUI: Stopped Spark web UI at http://10.1.10.186:4040
+17/05/11 12:43:55.489 PDT Thread-2<tid=0x> INFO DiskBlockManager: Shutdown hook called
+17/05/11 12:43:55.491 PDT Thread-2<tid=0x> INFO ShutdownHookManager: Shutdown hook called
+17/05/11 12:43:55.491 PDT Thread-2<tid=0x> INFO ShutdownHookManager: Deleting directory /private/var/folders/w1/v_m_9hp567qdv77k1rrglw_c0000gn/T/spark-91fe3345-b523-457b-a9ac-c9db9564f3e7
+17/05/11 12:43:55.492 PDT Thread-2<tid=0x> INFO ShutdownHookManager: Deleting directory /private/var/folders/w1/v_m_9hp567qdv77k1rrglw_c0000gn/T/spark-91fe3345-b523-457b-a9ac-c9db9564f3e7/userFiles-1d943364-720a-457d-ae2a-dff6072dc913
